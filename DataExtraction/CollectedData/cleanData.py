@@ -1,6 +1,5 @@
 import pandas as pd
 import re
-import csv
 
 
 # # # create a function to clean all the text of the tweets
@@ -18,16 +17,4 @@ data = pd.read_csv('NDC/PresTimeLineTweets.csv', encoding='utf-16')
 
 new_data = data
 new_data['Text'] = new_data['Text'].apply(cleanText)
-
-csvFile = open('collated_ndc_tweets.csv', 'a', encoding="utf-16")  # ../../../CollectedData/NDC/Pres
-csvWriter = csv.writer(csvFile)
-csvWriter.writerow([
-    "likes", "Re-Tweets"
-])
-
-likes = new_data['Likes']
-re_tweets = new_data['Re-Tweets']
-
-csvWriter.writerow([
-        likes, re_tweets
-    ])
+print(new_data.Text)
