@@ -24,7 +24,7 @@ csvWriter.writerow([
     "Date", "Id", "Text", "Likes", "Re-Tweets", "Location"
 ])
 
-for tweet in tweepy.Cursor(api.user_timeline, screen_name='JDMahama', tweet_mode="extended").items():
+for tweet in tweepy.Cursor(api.user_timeline, screen_name='NJOAgyemang', tweet_mode="extended").items():
     try:
         full_text = tweet.full_text
         full_text = ' '.join(tknzr.tokenize(full_text))

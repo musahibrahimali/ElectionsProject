@@ -25,7 +25,7 @@ csvWriter.writerow([
 
 # get the friends list of the user
 
-for user in tweepy.Cursor(api.friends, screen_name="JDMahama").items():
+for user in tweepy.Cursor(api.friends, screen_name="NJOAgyemang").items():
     try:
         with open('../../../CollectedData/NDC/RunningMateFollowerList.csv', 'a', encoding="utf-16") as csvFile:
             csvWriter.writerow([
