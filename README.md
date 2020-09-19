@@ -28,7 +28,7 @@ start the extraction process
 this process combines all the individual csv files with the data from different individuals of the same party into one
 csv file.
 
-5. Naivigate to **CleanedData\NDC\Files\sentiment.ipynb** and execute all cells in the notebook file to process the 
+5. Navigate to **CleanedData\NDC\Files\sentiment.ipynb** and execute all cells in the notebook file to process the 
 collated data from both parties
 
 NB: a combination of both sentiment process has been placed outside in the main folder 
